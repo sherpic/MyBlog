@@ -1,0 +1,143 @@
+2012/06/23 00:55:35 [error] [exception.CException] exception 'CException' with message 'Alias "ext.bootstrap.components.Bootstrap" is invalid. Make sure it points to an existing PHP file.' in /var/www/yii/YiiBase.php:318
+Stack trace:
+#0 /var/www/yii/YiiBase.php(198): YiiBase::import('ext.bootstrap.c...', true)
+#1 /var/www/yii/base/CModule.php(387): YiiBase::createComponent(Array)
+#2 /var/www/yii/base/CModule.php(493): CModule->getComponent('bootstrap')
+#3 /var/www/yii/base/CApplication.php(146): CModule->preloadComponents()
+#4 /var/www/yii/YiiBase.php(127): CApplication->__construct('/var/www/blog/p...')
+#5 /var/www/yii/YiiBase.php(100): YiiBase::createApplication('CWebApplication', '/var/www/blog/p...')
+#6 /var/www/blog/index.php(13): YiiBase::createWebApplication('/var/www/blog/p...')
+#7 {main}
+REQUEST_URI=/index.php?r=site/index
+HTTP_REFERER=http://blog/index.php?r=site/login
+---
+2012/06/23 01:09:40 [error] [exception.CException] exception 'CException' with message 'Alias "ext.bootstrap.components.Bootstrap" is invalid. Make sure it points to an existing PHP file.' in /var/www/yii/YiiBase.php:318
+Stack trace:
+#0 /var/www/yii/YiiBase.php(198): YiiBase::import('ext.bootstrap.c...', true)
+#1 /var/www/yii/base/CModule.php(387): YiiBase::createComponent(Array)
+#2 /var/www/yii/base/CModule.php(493): CModule->getComponent('bootstrap')
+#3 /var/www/yii/base/CApplication.php(146): CModule->preloadComponents()
+#4 /var/www/yii/YiiBase.php(127): CApplication->__construct('/var/www/blog/p...')
+#5 /var/www/yii/YiiBase.php(100): YiiBase::createApplication('CWebApplication', '/var/www/blog/p...')
+#6 /var/www/blog/index.php(13): YiiBase::createWebApplication('/var/www/blog/p...')
+#7 {main}
+REQUEST_URI=/index.php?r=site/index
+HTTP_REFERER=http://blog/index.php?r=site/login
+---
+2012/06/23 01:52:37 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /var/www/yii/db/CDbConnection.php:382
+Stack trace:
+#0 /var/www/yii/db/CDbConnection.php(331): CDbConnection->open()
+#1 /var/www/yii/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /var/www/yii/base/CModule.php(388): CDbConnection->init()
+#3 /var/www/yii/base/CModule.php(104): CModule->getComponent('db')
+#4 /var/www/yii/gii/generators/crud/CrudCode.php(44): CModule->__get('db')
+#5 /var/www/yii/web/CFormModel.php(40): CrudCode->init()
+#6 /var/www/yii/gii/CCodeGenerator.php(152): CFormModel->__construct()
+#7 /var/www/yii/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
+#8 /var/www/yii/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
+#9 /var/www/yii/web/CController.php(309): CInlineAction->runWithParams(Array)
+#10 /var/www/yii/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#11 /var/www/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/yii/web/CWebApplication.php(276): CController->run('')
+#13 /var/www/yii/web/CWebApplication.php(135): CWebApplication->runController('gii/bootstrap')
+#14 /var/www/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /var/www/blog/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=gii/bootstrap
+HTTP_REFERER=http://blog/index.php?r=gii/default/index
+---
+2012/06/23 02:00:40 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /var/www/yii/db/CDbConnection.php:382
+Stack trace:
+#0 /var/www/yii/db/CDbConnection.php(331): CDbConnection->open()
+#1 /var/www/yii/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /var/www/yii/base/CModule.php(388): CDbConnection->init()
+#3 /var/www/yii/base/CModule.php(104): CModule->getComponent('db')
+#4 /var/www/yii/gii/generators/crud/CrudCode.php(44): CModule->__get('db')
+#5 /var/www/yii/web/CFormModel.php(40): CrudCode->init()
+#6 /var/www/yii/gii/CCodeGenerator.php(152): CFormModel->__construct()
+#7 /var/www/yii/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
+#8 /var/www/yii/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
+#9 /var/www/yii/web/CController.php(309): CInlineAction->runWithParams(Array)
+#10 /var/www/yii/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#11 /var/www/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/yii/web/CWebApplication.php(276): CController->run('')
+#13 /var/www/yii/web/CWebApplication.php(135): CWebApplication->runController('gii/bootstrap')
+#14 /var/www/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /var/www/blog/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=gii/bootstrap
+HTTP_REFERER=http://blog/index.php?r=gii/default/index
+---
+2012/06/23 02:00:46 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /var/www/yii/db/CDbConnection.php:382
+Stack trace:
+#0 /var/www/yii/db/CDbConnection.php(331): CDbConnection->open()
+#1 /var/www/yii/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /var/www/yii/base/CModule.php(388): CDbConnection->init()
+#3 /var/www/yii/base/CModule.php(104): CModule->getComponent('db')
+#4 /var/www/yii/gii/generators/crud/CrudCode.php(44): CModule->__get('db')
+#5 /var/www/yii/web/CFormModel.php(40): CrudCode->init()
+#6 /var/www/yii/gii/CCodeGenerator.php(152): CFormModel->__construct()
+#7 /var/www/yii/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
+#8 /var/www/yii/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
+#9 /var/www/yii/web/CController.php(309): CInlineAction->runWithParams(Array)
+#10 /var/www/yii/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#11 /var/www/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/yii/web/CWebApplication.php(276): CController->run('')
+#13 /var/www/yii/web/CWebApplication.php(135): CWebApplication->runController('gii/bootstrap')
+#14 /var/www/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /var/www/blog/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=gii/bootstrap
+HTTP_REFERER=http://blog/index.php?r=gii/default/index
+---
+2012/06/23 02:01:03 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /var/www/yii/db/CDbConnection.php:382
+Stack trace:
+#0 /var/www/yii/db/CDbConnection.php(331): CDbConnection->open()
+#1 /var/www/yii/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /var/www/yii/base/CModule.php(388): CDbConnection->init()
+#3 /var/www/yii/base/CModule.php(104): CModule->getComponent('db')
+#4 /var/www/yii/gii/generators/crud/CrudCode.php(44): CModule->__get('db')
+#5 /var/www/yii/web/CFormModel.php(40): CrudCode->init()
+#6 /var/www/yii/gii/CCodeGenerator.php(152): CFormModel->__construct()
+#7 /var/www/yii/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
+#8 /var/www/yii/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
+#9 /var/www/yii/web/CController.php(309): CInlineAction->runWithParams(Array)
+#10 /var/www/yii/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#11 /var/www/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/yii/web/CWebApplication.php(276): CController->run('')
+#13 /var/www/yii/web/CWebApplication.php(135): CWebApplication->runController('gii/crud')
+#14 /var/www/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /var/www/blog/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=gii/crud
+HTTP_REFERER=http://blog/index.php?r=gii/default/index
+---
+2012/06/23 02:47:34 [error] [exception.CException] exception 'CException' with message 'Property "CMenu.htmlHeaders" is not defined.' in /var/www/yii/base/CComponent.php:174
+Stack trace:
+#0 /var/www/yii/web/CWidgetFactory.php(162): CComponent->__set('htmlHeaders', Array)
+#1 /var/www/yii/web/CBaseController.php(147): CWidgetFactory->createWidget(Object(SiteController), 'zii.widgets.CMe...', Array)
+#2 /var/www/yii/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.CMe...', Array)
+#3 /var/www/blog/protected/views/layouts/main.php(37): CBaseController->widget('zii.widgets.CMe...', Array)
+#4 /var/www/yii/web/CBaseController.php(127): require('/var/www/blog/p...')
+#5 /var/www/yii/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/blog/p...', Array, true)
+#6 /var/www/yii/web/widgets/CContentDecorator.php(77): CBaseController->renderFile('/var/www/blog/p...', Array, true)
+#7 /var/www/yii/web/widgets/CContentDecorator.php(55): CContentDecorator->decorate('<div id="conten...')
+#8 /var/www/yii/web/widgets/COutputProcessor.php(45): CContentDecorator->processOutput('<div id="conten...')
+#9 /var/www/yii/web/CBaseController.php(207): COutputProcessor->run()
+#10 /var/www/yii/web/CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#11 /var/www/blog/protected/views/layouts/column1.php(5): CBaseController->endContent()
+#12 /var/www/yii/web/CBaseController.php(127): require('/var/www/blog/p...')
+#13 /var/www/yii/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/blog/p...', Array, true)
+#14 /var/www/yii/web/CController.php(785): CBaseController->renderFile('/var/www/blog/p...', Array, true)
+#15 /var/www/blog/protected/controllers/SiteController.php(32): CController->render('index')
+#16 /var/www/yii/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#17 /var/www/yii/web/CController.php(309): CInlineAction->runWithParams(Array)
+#18 /var/www/yii/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#19 /var/www/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /var/www/yii/web/CWebApplication.php(276): CController->run('')
+#21 /var/www/yii/web/CWebApplication.php(135): CWebApplication->runController('')
+#22 /var/www/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#23 /var/www/blog/index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/index.php
+---
